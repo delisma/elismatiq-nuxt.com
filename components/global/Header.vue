@@ -12,11 +12,14 @@
       </li>
     </ul>
   </nav>
+  <aside>
+    <div data-netlify-identity-menu></div>
+  </aside>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
 }
 </script>
 
@@ -55,11 +58,19 @@ export default {
 
 /* Need two because of smoother switching between color modes */
 @keyframes fadeIn1 {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes fadeIn2 {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
